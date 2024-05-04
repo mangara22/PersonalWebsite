@@ -1,3 +1,10 @@
 body {
-    background-color: --bs-body-color;
+    background-image: url('/images/nyc.jpg');
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.text-white {
+    opacity: 1 !important;
 }
