@@ -13,7 +13,7 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center sticky-top">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active" href="#" style="cursor: pointer">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Projects</a>
@@ -24,37 +24,60 @@
         </ul>
     </nav>
 
-    <div class="container-fluid pt-3">
-        <div class="video-container">
-            <video autoplay muted loop id="myVideo">
-                <source src="/static/videos/mpls-night.mp4" type="video/mp4">
-            </video>
-            <div class="content">
-                <h1>Welcome to my personal website!</h1>
-            </div>
-            <div class="caption">
-                <h4>Minneapolis at night is the best!</h4>
-            </div>
-        </div>
-    </div>
-
     <div class="container-fluid pt-5 pb-5 text-center text-white">
+        <h1>Welcome to my personal website!</h1>
         <img src="/static/images/me.jpeg" class="img-fluid img-thumbnail" alt="Me in LA" height="450px" width="310px">
     </div>
     
     <div class="container-fluid p-5 text-center" style="background-color: rgba(35, 35, 35, 0.75);">
         <div class="text-white">
             <h2>About Me</h2>
-            <p class="lead">I am currently</p>
-            <p></p>
+            <p class="lead">I am currently a student majoring in Computer Science (B.S.) and minoring in IT Infrastructure at the University of Minnesota Twin Cities.</p>
+            <p>I am proficient in various programming languages such as Java, Python, C/C++, JavaScript, and SQL. In addition, as a teaching assistant, I dedicate time to fostering students' growth
+                in their coding and technical skills by leading labs and holding weekly office hours. Throughout this role, I have also improved my interpersonal communication skills
+                and collaborative skills, such as working with other TAs on quality-assurance for lab/project write-ups and revising template code.
+            </p>
+            <p>In my free time, I like to watch and play Tennis around the Twin Cities area. I also enjoy biking around the beautiful city of Minneapolis on sunny days.</p>
         </div>
     </div>
 
+    <div class="container-fluid p-5 mt-3 text-center" style="background-color: rgba(35, 35, 35, 0.75);">
+        <div class="text-white">
+            <h2>Languages</h2>
+            <p>Java, Python, C/C++, HTML/CSS, JavaScript, SQL, x86-64 Assembly, OCaml, LaTeX</p>
+            <hr>
+            <h2>Frameworks/Libraries</h2>
+            <p>Pandas, Matplotlib, Scikit-learn, JUnit, NumPy, SciPy, Seaborn, TensorFlow, Node.js, Express.js, Fetch API</p>
+            <hr>
+            <h2>Tools</h2>
+            <p>VSCode, IntelliJ IDEA, GitHub, Git, Linux, UNIX, Jupyter Notebook, Docker, MySQL, Jira, Doxygen</p>
+            <hr>
+            <h2>Software Development</h2>
+            <p>Agile Scrum framework, Waterfall methodology</p>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="container-fluid pt-3">
+        <div class="video-container">
+            <video autoplay muted loop id="myVideo">
+                <source src="/static/videos/mpls-night.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <h4>The Minneapolis city skyline at night is the best!</h4>
+            </div>
+        </div>
+    </div> -->
+
     <div class="container-fluid p-5 text-center">
         <footer class="footer bg-dark py-3 text-white">
-            <span>LinkedIn</span>
-            <span>GitHub</span>
-            <span>Email</span>
+            <span><a href="https://www.linkedin.com/in/michaelangara" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a></span>
+            <span><a href="https://github.com/mangara22" target="_blank"
+                rel="noopener noreferrer">GitHub</a></span>
+            <span><a href="mailto:pmichael.ang@gmail.com" target="_blank"
+                rel="noopener noreferrer">Email</a></span>
             <p id="lastMod"></p>
             <script>
                 let result = document.lastModified;

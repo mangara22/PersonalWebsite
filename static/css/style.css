@@ -23,14 +23,6 @@ body {
     z-index: -1;
 }
 
-.content {
-    position: relative;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
 .caption {
     position: absolute;
     bottom: 20px; /* Adjust the position of the caption as needed */
