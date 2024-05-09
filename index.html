@@ -11,15 +11,15 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center sticky-top">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav nav-underline">
             <li class="nav-item">
-                <a class="nav-link active" href="/index.html" style="cursor: pointer">Home</a>
+                <a class="nav-link active" href="/index.html" style="cursor: pointer">About Me</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/static/html/projects.html">Projects</a>
+                <a class="nav-link" href="/static/html/projects.html" style="cursor: pointer">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Notable Things</a>
+                <a class="nav-link" href="/static/html/achievements.html" style="cursor: pointer">Achievements</a>
             </li>
         </ul>
     </nav>
@@ -37,7 +37,7 @@
                 in their coding and technical skills by leading labs and holding weekly office hours. Throughout this role, I have also improved my interpersonal communication skills
                 and collaborative skills, such as working with other TAs on quality-assurance for lab/project write-ups and revising template code.
             </p>
-            <p>In my free time, I like to watch and play Tennis around the Twin Cities area. I also enjoy biking around the beautiful city of Minneapolis on sunny days.</p>
+            <p>Outside of classes, I like to watch and play Tennis around the Twin Cities area. I also enjoy biking around the beautiful city of Minneapolis on sunny days.</p>
         </div>
     </div>
 
@@ -72,17 +72,21 @@
 
     <div class="container-fluid p-5 text-center">
         <footer class="footer bg-dark py-3 text-white">
-            <span><a href="https://www.linkedin.com/in/michaelangara" target="_blank"
+            <span><a class="link-underline-secondary" href="https://www.linkedin.com/in/michaelangara" target="_blank"
                 rel="noopener noreferrer">LinkedIn</a></span>
-            <span><a href="https://github.com/mangara22" target="_blank"
+            <span><a class="link-underline-secondary" href="https://github.com/mangara22" target="_blank"
                 rel="noopener noreferrer">GitHub</a></span>
-            <span><a href="mailto:pmichael.ang@gmail.com" target="_blank"
+            <span><a class="link-underline-secondary" href="mailto:pmichael.ang@gmail.com" target="_blank"
                 rel="noopener noreferrer">Email</a></span>
             <p id="lastMod"></p>
             <script>
                 let result = document.lastModified;
                 document.getElementById("lastMod").innerHTML = "Last Updated: " + result;
             </script>
+            <span>Approximately 85% progress towards graduation/degree completion!</span>
+            <div class="progress" style="height: 20px;">
+                <div class="progress-bar progress-bar-striped text-black progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
         </footer>
     </div>
 </body>
