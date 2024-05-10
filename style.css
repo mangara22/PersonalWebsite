@@ -1,5 +1,5 @@
 body {
-    background-image: url('/static/images/nyc.jpg');
+    background-image: url('/images/nyc.jpg');
     background-repeat: repeat-x;
     background-attachment: fixed;
     background-size: cover;
