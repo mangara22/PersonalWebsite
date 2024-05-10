@@ -13,5 +13,12 @@ function countdown() {
 
         let result = "Countdown to May 1st, 2025: " + days + " day(s) " + hours + " hour(s) " + minutes + " minute(s) " + seconds + " second(s)";
         document.getElementById("cd").innerHTML = result;
+
+        if (diff < 0) {
+            clearInterval(countdown);
+            document.getElementById("cd").innerHTML = "Countdown to May 1st, 2025 is Expired!";
+        }
     }, 1000)
 }
+
+document.addEventListener("load", countdown());
