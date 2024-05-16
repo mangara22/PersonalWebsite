@@ -4,7 +4,6 @@ function countdown() {
     let countdown = setInterval(() => {
         // https://www.w3schools.com/howto/howto_js_countdown.asp
         let currentDate = new Date().getTime();
-
         let diff = countDownDate - currentDate;
         let days = Math.floor(diff / (1000 * 60 * 60 * 24));
         let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
