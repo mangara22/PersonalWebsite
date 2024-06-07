@@ -21,3 +21,47 @@ function countdown() {
 }
 
 document.addEventListener("load", countdown());
+
+var correct = "";
+
+function getTrivia() {
+    fetch('https://opentdb.com/api.php?amount=1&difficulty=medium&type=multiple')
+        .then(response => response.json())
+        .then(data => {
+            if (data.response_code == 0) {
+                let result = data.results[0];
+                document.getElementById("question").innerHTML = result.question;
+                
+                let answers = [];
+                answers.push(result.correct_answer);
+                let incorrect = result.incorrect_answers;
+                for(let i = 0; i < incorrect.length; i++) {
+                    answers.push(incorrect[i]);
+                }
+                answers.sort();
+
+                for(let j = 1; j <= 4; j++) {
+                    let id = "option" + j;
+                    document.getElementById(id).innerHTML = answers[j-1];
+                }
+
+                correct = result.correct_answer;
+            }
+            else if (data.response_code == 5) {
+                alert("Don't click the buttons too fast!");
+            }
+        })
+        .catch(error => {
+            console.log("Error: " + error);
+        })
+}
+
+function correctAnswer() {
+    if (correct === "") {
+        alert("No question has been loaded in yet!");
+    }
+    else {
+        alert(correct);
+    }
+    getTrivia();
+}
