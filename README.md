@@ -1,5 +1,5 @@
 # PersonalWebsite
 <div>
   <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3liaGQyanEyaXU2cjdid3oyaTV1cjhndjJhOWJoajU1b3QwZ2VhbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9JrkkDoJuU0FbdbUZU/giphy.gif" width="280">
-  <p>My personal website made with HTML, CSS, and JS. Along with some other external tools/frameworks such as <em>Bootstrap</em> and <em>Animate.css</em>.</p>
+  <p>My personal website made with HTML, CSS, and JS. Along with some other external tools/frameworks such as <em>Bootstrap, Animate.css, and some random trivia using an API</em>!</p>
 </div>
