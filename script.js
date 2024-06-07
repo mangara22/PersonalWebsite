@@ -48,7 +48,7 @@ function getTrivia() {
                 correct = result.correct_answer;
             }
             else if (data.response_code == 5) {
-                alert("Be patient and click again in a few seconds for your question!");
+                alert("Don't click the buttons too fast!");
             }
         })
         .catch(error => {
