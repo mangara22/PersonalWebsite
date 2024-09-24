@@ -1,5 +1,5 @@
 function countdown() {
-    let countDownDate = new Date(2025, 4, 1, 17).getTime();
+    let countDownDate = new Date(2025, 4, 12, 12).getTime();
 
     let countdown = setInterval(() => {
         // https://www.w3schools.com/howto/howto_js_countdown.asp
@@ -10,12 +10,12 @@ function countdown() {
         let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-        let result = "Countdown to May 1st, 2025: " + days + " day(s) " + hours + " hour(s) " + minutes + " minute(s) " + seconds + " second(s)";
+        let result = "Time until graduation (est. May 12, 2025): " + days + " day(s) " + hours + " hour(s) " + minutes + " minute(s) " + seconds + " second(s)";
         document.getElementById("cd").innerHTML = result;
 
         if (diff < 0) {
             clearInterval(countdown);
-            document.getElementById("cd").innerHTML = "Countdown to May 1st, 2025 is Expired!";
+            document.getElementById("cd").innerHTML = "Countdown is Expired!";
         }
     }, 1000)
 }
